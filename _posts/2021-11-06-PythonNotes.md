@@ -5,7 +5,7 @@ toc:
   selectors: "h1,h2,h3,h4,h5"
 image:
     
-typora-root-url: ..
+typora-root-url: ../chenxin.github.io
 ---
 
 
