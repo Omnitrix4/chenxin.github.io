@@ -6,6 +6,16 @@ toc:
 image:
     
 typora-root-url: ..
+# Mathjax
+mathjax: true
+mathjax_autoNumber: true
+
+# Mermaid
+mermaid: true
+
+# Chart
+chart: true
+
 ---
 
 
@@ -82,7 +92,7 @@ for 循环使用 enumerate
 
 type用来查看对象类型
 
-![image-20211008193056162](/Python/image-20211008193056162.png){:.border}
+![image-20211008193056162](/chenxin.github.io/Python/image-20211008193056162.png){:.border}
 
 **x+=6可以存在，但++不存在**
 
@@ -119,7 +129,7 @@ print(id(x) == id(z)) //也遵循
 
 **非同一语句下：**
 
-![image-20211008194831749](/chenxin.github.io/Python1/image-20211008194831749.png){:.border}
+![image-20211008194831749](/chenxin.github.io/Python/image-20211008194831749.png){:.border}
 
 
 
@@ -156,7 +166,7 @@ print('我是测试r原始字符 \\'+ss)
 
 **x is y** 测试两个对象引用的地址是否一致
 
-![image-20211008202558191](/Python/image-20211008202558191.png){:.border}
+![image-20211008202558191](/chenxin.github.io/Python/image-20211008202558191.png){:.border}
 
 ### is ，in 与 id的区别
 
@@ -168,7 +178,7 @@ in用来测试一个对象是否是另一个对象的元素
 
 is**是用来测试两个对象是否相同**
 
-![image-20211008204318330](/Python/image-20211008204318330.png){:.border}
+![image-20211008204318330](/chenxin.github.io/Python/image-20211008204318330.png){:.border}
 
 两者单个类型一致
 
@@ -188,9 +198,9 @@ python中 余数与右侧的运算符号一致即与（-17%4） 中的==4==一�
 
 比较列表的大小
 
-![image-20211008203555563](/Python/image-20211008203555563.png){:.border}
+![image-20211008203555563](/chenxin.github.io/Python/image-20211008203555563.png){:.border}
 
-![image-20211008203839847](/Python/image-20211008203839847.png){:.border}
+![image-20211008203839847](/chenxin.github.io/Python/image-20211008203839847.png){:.border}
 
 ### and or
 
@@ -207,7 +217,7 @@ python中 余数与右侧的运算符号一致即与（-17%4） 中的==4==一�
 
 ord 与chr
 
-![image-20211008210743226](/Python/image-20211008210743226.png){:.border}
+![image-20211008210743226](/chenxin.github.io/Python/image-20211008210743226.png){:.border}
 
 str 特点是加‘’
 
@@ -865,7 +875,7 @@ dic = {‘a’:1, ‘b’:2, ‘c’:3}#
 
 导致一个b有多个值
 
-![image-20211012225844995](/Python/image-20211012225844995.png)
+![image-20211012225844995](/chenxin.github.io/Python/image-20211012225844995.png)
 
 
 
@@ -1269,15 +1279,15 @@ stu._Student__printMessage()
 
 ### 文件打开方式
 
-![image-20211024211800557](/Python/image-20211024211800557.png)
+![image-20211024211800557](/chenxin.github.io/Python/image-20211024211800557.png)
 
 
 
-![image-20211024212402399](/Python/image-20211024212402399.png)
+![image-20211024212402399](/chenxin.github.io/Python/image-20211024212402399.png)
 
 
 
-![image-20211024212528862](/Python/image-20211024212528862.png)
+![image-20211024212528862](/chenxin.github.io/Python/image-20211024212528862.png)
 
 
 
