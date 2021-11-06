@@ -5,7 +5,7 @@ toc:
   selectors: "h1,h2,h3,h4,h5"
 image:
     
-typora-root-url: ../chenxin.github.io
+typora-root-url: ..
 ---
 
 
@@ -102,7 +102,7 @@ type用来查看对象类型
 
 **浮点数不遵循**[-5,256]：
 
-![image-20211008194256232](/Python/image-20211008194256232.png){:.border}
+![image-20211008194256232](/chenxin.github.io/Python/image-20211008194256232.png){:.border}
 
 
 
@@ -110,7 +110,7 @@ type用来查看对象类型
 
 同一个语句下，大数也共用
 
-![image-20211008194432056](/Python/image-20211008194432056.png){:.border}
+![image-20211008194432056](/chenxin.github.io/Python/image-20211008194432056.png){:.border}
 
 ```python
 x,z = 200.0, 200.0
