@@ -119,7 +119,7 @@ print(id(x) == id(z)) //也遵循
 
 **非同一语句下：**
 
-![image-20211008194831749](/Python/image-20211008194831749.png){:.border}
+![image-20211008194831749](/chenxin.github.io/Python1/image-20211008194831749.png){:.border}
 
 
 
@@ -127,7 +127,7 @@ print(id(x) == id(z)) //也遵循
 
 
 
-![image-20211008195149383](/Python/image-20211008195149383.png){:.border}
+![image-20211008195149383](/chenxin.github.io/Python/image-20211008195149383.png){:.border}
 
 
 
