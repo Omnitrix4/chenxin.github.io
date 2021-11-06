@@ -1,6 +1,6 @@
 ---
 layout:article
-title: 我的第一篇博客
+title:my first 博客
 tags: TeXt
 ---
 
