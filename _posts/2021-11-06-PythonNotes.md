@@ -77,7 +77,7 @@ for 循环使用 enumerate
 
 type用来查看对象类型
 
-![image-20211008193056162](C:\Users\陈鑫\AppData\Roaming\Typora\typora-user-images\image-20211008193056162.png)
+![image-20211008193056162](Python\image-20211008193056162.png)
 
 **x+=6可以存在，但++不存在**
 
@@ -85,7 +85,7 @@ type用来查看对象类型
 
 
 
-### 基于值的内存管理方式
+### 基于值的内存管理方式!
 
 #### 什么叫基于值？
 
@@ -97,7 +97,7 @@ type用来查看对象类型
 
 **浮点数不遵循**[-5,256]：
 
-![image-20211008194256232](C:\Users\陈鑫\AppData\Roaming\Typora\typora-user-images\image-20211008194256232.png)
+![image-20211008194256232](Python\image-20211008194256232.png)
 
 
 
@@ -105,7 +105,7 @@ type用来查看对象类型
 
 同一个语句下，大数也共用
 
-![image-20211008194432056](C:\Users\陈鑫\AppData\Roaming\Typora\typora-user-images\image-20211008194432056.png)
+![image-20211008194432056](\Python\image-20211008194432056.png)
 
 ```python
 x,z = 200.0, 200.0
@@ -114,7 +114,7 @@ print(id(x) == id(z)) //也遵循
 
 **非同一语句下：**
 
-![image-20211008194831749](C:\Users\陈鑫\AppData\Roaming\Typora\typora-user-images\image-20211008194831749.png)
+![image-20211008194831749](/Python\image-20211008194831749.png)
 
 
 
@@ -122,7 +122,7 @@ print(id(x) == id(z)) //也遵循
 
 
 
-![image-20211008195149383](C:\Users\陈鑫\AppData\Roaming\Typora\typora-user-images\image-20211008195149383.png)
+![image-20211008195149383](/Python/image-20211008195149383.png)
 
 
 
@@ -151,7 +151,7 @@ print('我是测试r原始字符 \\'+ss)
 
 **x is y** 测试两个对象引用的地址是否一致
 
-![image-20211008202558191](C:\Users\陈鑫\AppData\Roaming\Typora\typora-user-images\image-20211008202558191.png)
+![image-20211008202558191](\Python\image-20211008202558191.png)
 
 ### is ，in 与 id的区别
 
@@ -163,7 +163,7 @@ in用来测试一个对象是否是另一个对象的元素
 
 is**是用来测试两个对象是否相同**
 
-![image-20211008204318330](C:\Users\陈鑫\AppData\Roaming\Typora\typora-user-images\image-20211008204318330.png)
+![image-20211008204318330](Python\image-20211008204318330.png)
 
 两者单个类型一致
 
@@ -183,9 +183,9 @@ python中 余数与右侧的运算符号一致即与（-17%4） 中的==4==一�
 
 比较列表的大小
 
-![image-20211008203555563](C:\Users\陈鑫\AppData\Roaming\Typora\typora-user-images\image-20211008203555563.png)
+![image-20211008203555563](\Python\image-20211008203555563.png)
 
-![image-20211008203839847](C:\Users\陈鑫\AppData\Roaming\Typora\typora-user-images\image-20211008203839847.png)
+![image-20211008203839847](\Python\image-20211008203839847.png)
 
 ### and or
 
@@ -202,7 +202,7 @@ python中 余数与右侧的运算符号一致即与（-17%4） 中的==4==一�
 
 ord 与chr
 
-![image-20211008210743226](C:\Users\陈鑫\AppData\Roaming\Typora\typora-user-images\image-20211008210743226.png)
+![image-20211008210743226](\Python\image-20211008210743226.png)
 
 str 特点是加‘’
 
