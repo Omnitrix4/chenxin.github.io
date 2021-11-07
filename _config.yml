@@ -37,7 +37,7 @@ author:
   type      : # "person" (default), "organization"
   name      : chen xin
   url       :
-  avatar    : /chenxin.github.io/Python/image-20211008195149383.png
+  avatar    : https://gimg2.baidu.com/image_search/src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_match%2F0%2F11954917326%2F0.jpg&refer=http%3A%2F%2Finews.gtimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1638885493&t=b7cbd8333747c6f0f18c8b87d42b8f65
   bio       : I am an amazing person.
   email     :
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
