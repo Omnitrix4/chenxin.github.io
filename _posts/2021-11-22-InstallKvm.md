@@ -3,9 +3,10 @@ title: 安装kvm
 tags: TeXt
 toc:
   selectors: "h1,h2,h3,h4,h5"
-image: /chenxin.github.io
+image: 
+  src: /chenxin.github.io
     
-typora-root-url: ..
+
 # Mathjax
 mathjax: true
 mathjax_autoNumber: true
@@ -15,7 +16,7 @@ mermaid: true
 
 # Chart
 chart: true
-
+typora-root-url: ..\chenxin.github.io\images
 ---
 
 
@@ -36,7 +37,7 @@ typora-copy-images-to: ..\GithubLib\GitHubPage\chenxin.github.io\images
 
 - 内存建议3G起步，并且需要**勾选虚拟化引擎**
 
-  ![image-20211121221252313](/chenxin.github.io/images/image-20211121221252313-1637572459679.png)
+  ![image-20211121221252313](/images/image-20211121221252313-1637572459679.png)
 
   
 
