@@ -25,10 +25,6 @@ typora-root-url: ..\chenxin.github.io\images
 
 
 
----
-typora-copy-images-to: ..\GithubLib\GitHubPage\chenxin.github.io\images
----
-
 ## 1.准备工作
 
 因为我们需要在Linux下安装win10，而win10又需要比较大的内存和硬盘空间，所以需要我们的的内存和硬盘都要比较大，还需要有网络连接。
@@ -37,13 +33,13 @@ typora-copy-images-to: ..\GithubLib\GitHubPage\chenxin.github.io\images
 
 - 内存建议3G起步，并且需要**勾选虚拟化引擎**
 
-  ![image-20211121221252313](/images/image-20211121221252313-1637572459679.png)
+  ![image-20211121221252313](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271256710.png)
 
   
 
 - 在linux中安装win10,硬盘需要45G，如果够了就不需要再增加。因为我刚开始设置不够，所以加装了一块硬盘，加装后要记得去在linux上挂载
 
-  ![image-20211121233453791](/images/image-20211121233453791-1637572463151.png)
+  ![image-20211121233453791](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271256183.png)
 
   
 
@@ -59,23 +55,23 @@ Linux与Win系统在增加硬盘是有区别，当win插入一块新硬盘时，
 
 **1.**
 
-![image-20211121221558251](/images/image-20211121221558251-1637572465819.png)
+![image-20211121221558251](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271256941.png)
 
 **2.**
 
 
 
-![image-20211121221608307](/images/image-20211121221608307-1637572468338.png)
+![image-20211121221608307](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271256202.png)
 
 
 
 **3.**
 
-![image-20211121221623286](/images/image-20211121221623286-1637572470738.png)
+![image-20211121221623286](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271256501.png)
 
 **4.**
 
-![image-20211121221639029](/images/image-20211121221639029-1637572477727.png)
+![image-20211121221639029](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271256803.png)
 
 
 
@@ -87,7 +83,7 @@ Linux与Win系统在增加硬盘是有区别，当win插入一块新硬盘时，
 df -h
 ```
 
-![image-20211121234500736](/images/image-20211121234500736-1637572479795.png)
+![image-20211121234500736](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271256505.png)
 
 2.查找已经安装并且未格式化的磁盘,使用命令 fdisk -l 列出所有的磁盘
 
@@ -95,7 +91,7 @@ df -h
 fdisk -l
 ```
 
-![image-20211121234959450](/images/image-20211121234959450-1637572484239.png)
+![image-20211121234959450](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271256675.png)
 
 发现此时sdb还没有挂载和格式化
 
@@ -109,27 +105,27 @@ fdisk -l
 fdisk /dev/sdb
 ```
 
-
+image-20211121235309267
 
 
 
 **3.2** 再以此输入n,p
 
-![image-20211121235409569](/images/image-20211121235409569-1637572487209.png)
+![image-20211121235409569](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271256872.png)
 
 **3.3** 分区号这些都默认
 
-![image-20211121235451873](/images/image-20211121235451873-1637572493523.png)
+![image-20211121235451873](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271257045.png)
 
 **3.4** 输入p，可以看到默认为sdb1
 
-![image-20211121235757971](/images/image-20211121235757971-1637572495473.png)
+![image-20211121235757971](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271257069.png)
 
 
 
 **3.5** 再输入w，写入操作
 
-![image-20211121235537881](/images/image-20211121235537881-1637572497622.png)
+![image-20211121235537881](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271257080.png)
 
 
 
@@ -141,7 +137,7 @@ mkfs.ext4 /dev/sdb1
 
  将sdb1分区设为 ext4 的文件系统格式。
 
-![image-20211122000043172](/images/image-20211122000043172-1637572500932.png)
+![image-20211122000043172](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271257839.png)
 
 
 
@@ -149,7 +145,7 @@ mkfs.ext4 /dev/sdb1
 
 先创建一个新的目录，命名为data1，存放在data1中的数据实际上就是存放在新的硬盘上
 
-![image-20211122000247489](/images/image-20211122000247489.png)
+![image-20211122000247489](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271257086.png)
 
 再挂载
 
@@ -157,11 +153,11 @@ mkfs.ext4 /dev/sdb1
  mount /dev/sdb1 /data1
 ```
 
-![image-20211122000438810](/images/image-20211122000438810.png)
+![image-20211122000438810](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271257422.png)
 
 通过df -h 查看是否挂载成功
 
-![image-20211122000520229](../GithubLib/GitHubPage/chenxin.github.io/images/image-20211122000520229.png)
+![image-20211122000520229](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271257903.png)
 
 
 
@@ -173,7 +169,7 @@ mkfs.ext4 /dev/sdb1
 vim /etc/fstab
 ```
 
-命令，进行编辑![image-20211122000744544](../GithubLib/GitHubPage/chenxin.github.io/images/image-20211122000744544.png)
+命令，进行编辑![image-20211122000744544](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271257781.png)
 
 先输入 **i**   切换成编辑模式 ，再末尾增加
 
@@ -181,7 +177,7 @@ vim /etc/fstab
 /dev/sdb1 /data1 defaults 0 0
 ```
 
-![image-20211122000943906](../GithubLib/GitHubPage/chenxin.github.io/images/image-20211122000943906.png)
+![image-20211122000943906](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271257932.png)
 
 再按Esc 输入`:wq`退出
 
@@ -189,7 +185,7 @@ vim /etc/fstab
 
 通过`cat /etc/fstab` 进行查看
 
-![image-20211122001245689](../GithubLib/GitHubPage/chenxin.github.io/images/image-20211122001245689.png)
+![image-20211122001245689](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271257096.png)
 
 **挂载新硬盘完毕**
 
@@ -205,7 +201,7 @@ vim /etc/fstab
 
 如果不支持的话，将这些打钩
 
-![image-20211121220631534](/images/image-20211121220631534.png)
+![image-20211121220631534](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271257147.png)
 
 
 
@@ -215,7 +211,7 @@ vim /etc/fstab
 lsmod | grep kvm
 ```
 
-![image-20211121231207487](/images/image-20211121231207487.png)
+![image-20211121231207487](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271257425.png)
 
 如果出现上述，说明已加载。
 
@@ -237,7 +233,7 @@ yum install qemu-kvm qemu-img virt-manager libvirt libvirt-python python-virtins
 
 出现下列消息，说明成功安装
 
-![image-20211121231333989](/images/image-20211121231333989.png)
+![image-20211121231333989](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271257886.png)
 
 
 
@@ -251,7 +247,7 @@ virt-manager
 
 出现下图，说明安装virt-manager安装成功
 
-![image-20211121231552054](/images/image-20211121231552054.png)
+![image-20211121231552054](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271257333.png)
 
 
 
@@ -274,15 +270,15 @@ virt-manager
 
 `virt-manager`
 
-![image-20211122002644609](/images/image-20211122002644609.png)
+![image-20211122002644609](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271257576.png)
 
 
 
-![image-20211122002731369](/images/image-20211122002731369.png)
+![image-20211122002731369](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271258117.png)
 
 
 
-![image-20211122003007401](/images/image-20211122003007401.png)
+![image-20211122003007401](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271258056.png)
 
 
 
@@ -290,11 +286,11 @@ virt-manager
 
 
 
-![image-20211122003218677](/images/image-20211122003218677.png)
+![image-20211122003218677](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271258158.png)
 
 
 
-![image-20211122003235769](/images/image-20211122003235769.png)
+![image-20211122003235769](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271258757.png)
 
 
 
@@ -304,45 +300,45 @@ virt-manager
 
 ### 给win10配置硬盘
 
-![image-20211122003426842](/images/image-20211122003426842.png)
+![image-20211122003426842](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271258066.png)
 
 因为默认只剩下10GB，肯定不够，所以使用添加的前面第二块硬盘
 
-![image-20211122003534151](/images/image-20211122003534151.png)
+![image-20211122003534151](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271258087.png)
 
 
 
-![image-20211122003546303](/images/image-20211122003546303.png)
+![image-20211122003546303](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271258333.png)
 
 
 
-![image-20211122003638984](/images/image-20211122003638984.png)
+![image-20211122003638984](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271258994.png)
 
-![image-20211122003656918](/images/image-20211122003656918.png)
+![image-20211122003656918](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271258951.png)
 
-![image-20211122003716582](/images/image-20211122003716582.png)
-
-
-
-![image-20211122003730275](/images/image-20211122003730275.png)
+![image-20211122003716582](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271258783.png)
 
 
 
-![image-20211122003745110](/images/image-20211122003745110.png)
+![image-20211122003730275](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271258964.png)
 
 
 
-![image-20211122003801165](/images/image-20211122003801165.png)
+![image-20211122003745110](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271258235.png)
 
 
 
-![image-20211122003823617](/images/image-20211122003823617.png)
+![image-20211122003801165](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271258077.png)
+
+
+
+![image-20211122003823617](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271259182.png)
 
 
 
 最后完成不出意外的话应该能行
 
-![image-20211119225521807](file://C:\Users\%E9%99%88%E9%91%AB\AppData\Roaming\Typora\typora-user-images\image-20211119225521807.png?lastModify=1637512751)
+
 
 下载
 
@@ -354,7 +350,7 @@ virt-manager
 
 因为文件直接拖入linux桌面会损失，所以可以**在linux上下载**，或者**使用共享文件夹**
 
-![image-20211122130323877](/images/image-20211122130323877.png)
+![image-20211122130323877](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271300217.png)
 
 
 
@@ -362,19 +358,19 @@ virt-manager
 
 我的win10iso放在D盘的IDm下载里面
 
-![image-20211122121440506](/images/image-20211122121440506.png)
+![image-20211122121440506](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271300090.png)
 
 
 
-![image-20211122121407466](/images/image-20211122121407466.png)
+![image-20211122121407466](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271300972.png)
 
 
 
-![image-20211122121351693](/images/image-20211122121351693.png)
+![image-20211122121351693](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271300616.png)
 
 
 
-![image-20211122121421027](/images/image-20211122121421027.png)
+![image-20211122121421027](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271300414.png)
 
 
 
@@ -382,7 +378,7 @@ virt-manager
 
 1.输入命令 `vmware-hgfsclient`
 
-![image-20211122124951729](/images/image-20211122124951729.png)
+![image-20211122124951729](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271300006.png)
 
 出现上述共享目录设置成功
 
@@ -390,7 +386,7 @@ virt-manager
 
 `mkdir /sharewin`
 
-![image-20211122125205067](/images/image-20211122125205067.png)
+![image-20211122125205067](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271300420.png)
 
 
 
@@ -398,7 +394,7 @@ virt-manager
 
 `vmhgfs-fuse .host:/IDM下载 /sharewin`
 
-![image-20211122125325370](/images/image-20211122125325370.png)
+![image-20211122125325370](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271300994.png)
 
 可以看到 打开/sharewin文件夹，已经可以看到D盘下的文件
 
@@ -408,7 +404,7 @@ virt-manager
 
 `.host:/IDM下载 /sharewin fuse.vmhgfs-fuse allow_other,defaults 0 0`
 
-![image-20211122125532198](/images/image-20211122125532198.png)
+![image-20211122125532198](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271300822.png)
 
 
 
@@ -416,7 +412,7 @@ virt-manager
 
 
 
-![image-20211122125636330](/images/image-20211122125636330.png)
+![image-20211122125636330](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271301901.png)
 
 如果出现上述说明成功
 
@@ -428,8 +424,9 @@ virt-manager
 
 1.输入`mv win.iso /data1`，（iso的名字太长了，我重命名了
 
-![image-20211122130013850](/images/image-20211122130013850.png)
+![image-20211122130013850](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271301918.png)
 
 2.接下来只要在linux目录下找到iso就可以安装了
 
-![image-20211122130244668](/images/image-20211122130244668.png)
+![image-20211122130244668](https://gitee.com/chenxinnnn/learn_images/raw/master/img/202111271301156.png)
+
